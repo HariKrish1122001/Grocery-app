@@ -1,0 +1,93 @@
+/* Basic navbar link styling */
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+border: none;
+}
+
+/* Preventing overflow */
+body, html {
+  overflow-x: hidden;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Navbar content */
+  .navbar-nav {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+ 
+ 
+
+  /* Navbar buttons should stack vertically on mobile */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add space between navbar and buttons */
+  }
+
+  .buttons .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem; /* Reduce font size for mobile */
+  }
+
+  /* Making sure the navbar menu doesn't overflow horizontally */
+  .navbar-collapse {
+    overflow-x: hidden;
+    transition: all 0.4s;
+  }
+}
+
+@media (max-width: 576px) {
+ 
+  /* Adjust the size of the icon on small devices */
+  .navbar-nav li {
+    font-size: 1rem; /* Make icon smaller on extra small screens */
+  }
+}
+/* Button base styles */
+.btn-outline-light {
+color: white;
+padding: 0.5rem 1rem;
+transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-outline-light:hover {
+background-color: white;
+color: #1b7b16;
+
+}
+
+/* Active state effect */
+.btn-outline-light.active, 
+.btn-outline-light:focus {
+background-color: white;
+color: #1b7b16; 
+
+}

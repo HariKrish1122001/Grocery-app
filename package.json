@@ -1,0 +1,81 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@firebase/analytics": "^0.10.11",
+    "@firebase/app": "^0.10.17",
+    "@firebase/auth": "^1.8.2",
+    "@firebase/firestore": "^4.7.6",
+    "@firebase/messaging": "^0.12.16",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@lottiefiles/dotlottie-react": "^0.13.0",
+    "@reduxjs/toolkit": "^2.5.0",
+    "assert": "^2.1.0",
+    "axios": "^1.7.9",
+    "bootstrap": "^5.3.3",
+    "browserify-zlib": "^0.2.0",
+    "core-js-pure": "^3.39.0",
+    "cra-template": "1.2.0",
+    "firebase": "^11.2.0",
+    "font-awesome": "^4.7.0",
+    "https-browserify": "^1.0.0",
+    "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "owl.carousel": "^2.3.4",
+    "razorpay": "^2.9.5",
+    "react": "^18.3.1",
+    "react-app-rewired": "^2.2.1",
+    "react-bootstrap": "^2.10.7",
+    "react-cookie": "^7.2.2",
+    "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.4.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-modal": "^3.16.3",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.28.2",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.1",
+    "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^6.1.13",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "source-map-loader": "^5.0.0"
+  }
+}

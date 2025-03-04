@@ -1,0 +1,31 @@
+.carousel-nav-1 {
+    position: absolute;
+    top: -10px;  /* Adjust this value to move the buttons vertically */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    background-color: #1b7b16;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the arrow inside the circle */
+  }
+  
+  .left-nav-1 {
+    right: 50px;  /* Places the left arrow slightly to the left of the right corner */
+  }
+  
+  .right-nav-1 {
+    right: 0;  /* Places the right arrow at the far right corner */
+  }
+  
+  .owl-prev, .owl-next {
+    display: none;  /* Hide default OwlCarousel arrows */
+  }
+  

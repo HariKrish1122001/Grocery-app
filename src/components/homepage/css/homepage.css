@@ -1,0 +1,109 @@
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-slide {
+  position: relative;
+}
+.slick-dots li button:before {
+  color: transparent;
+}
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
+.slick-slide {
+  height: auto;
+}
+.carousel-image {
+  width: 100%;
+  height: auto; 
+  /* max-height: 500px;  */
+  object-fit: cover;
+}
+/* Dots styling */
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+}
+/* Default styles for larger screens */
+.banner-image {
+  width: 100%;
+  height: 400px;
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 768px) {
+  .banner-image {
+      width: 100%;
+      height: auto;
+  }
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-dots li.slick-active {
+  background-color:   rgba(255, 255, 255, 0.5);
+  width: 52px;
+  border-radius: 2px; /* Oval shape for active state */
+  position: relative;
+}
+
+/* Progress bar animation for active dot */
+.slick-dots li.slick-active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:#1b7b16;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: progressBar 3s linear forwards;
+}
+
+/* Animation for progress bar */
+@keyframes progressBar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-dots li.slick-active {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slick-dots li {
+    width: 8px;
+    height: 8px;
+  }
+
+  .slick-dots li.slick-active {
+    width: 30px;
+  }
+}
