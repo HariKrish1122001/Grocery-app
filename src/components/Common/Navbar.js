@@ -401,7 +401,7 @@ const Navbar = () => {
         });
         const cartItems = response.data.cart.items;
         const uniqueItems = cartItems.length;
-        setItemsCount(uniqueItems);  
+        // setItemsCount(uniqueItems);  
         setLoading(false);  
         animateCartCount(uniqueItems);
       } catch (error) {
@@ -464,7 +464,7 @@ const Navbar = () => {
       fetchCartItemCount(); // Fetch cart item count only if logged in
     } else {
       setIsLoggedIn(false); 
-      setItemsCount(0); 
+      // setItemsCount(0); 
       setAnimatedCount(0);
       setLoading(false);  
     }
