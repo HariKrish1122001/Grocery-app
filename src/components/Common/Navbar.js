@@ -444,12 +444,12 @@ const Navbar = () => {
       if (response.ok) {
         setIsLoggedIn(true); // If profile fetch is successful, user is logged in
       } else {
-        setError(data.error || "Failed to fetch user profile.");
+        // setError(data.error || "Failed to fetch user profile.");
         Cookies.remove("token"); // Remove invalid token
         setIsLoggedIn(false);
       }
     } catch (error) {
-      setError("Network error occurred. Please try again.");
+      // setError("Network error occurred. Please try again.");
       Cookies.remove("token"); // Remove invalid token in case of network error
       setIsLoggedIn(false);
     } finally {
