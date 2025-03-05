@@ -383,10 +383,10 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");  
   const [isMenuOpen, setIsMenuOpen] = useState(false);  
   const [isLoggedIn, setIsLoggedIn] = useState(false);  
-  // const [itemsCount, setItemsCount] = useState(0);  
+  const [itemsCount, setItemsCount] = useState(0);  
   const [animatedCount, setAnimatedCount] = useState(0);  
   const [loading, setLoading] = useState(true);  
-  const [error, setError] = useState(null); 
+  const [error, setError] = useState(null); // To store any error from fetching profile
   const navigate = useNavigate(); 
 
   const fetchCartItemCount = async () => {
@@ -401,7 +401,7 @@ const Navbar = () => {
         });
         const cartItems = response.data.cart.items;
         const uniqueItems = cartItems.length;
-        // setItemsCount(uniqueItems);  
+        setItemsCount(uniqueItems);  
         setLoading(false);  
         animateCartCount(uniqueItems);
       } catch (error) {
@@ -464,7 +464,7 @@ const Navbar = () => {
       fetchCartItemCount(); // Fetch cart item count only if logged in
     } else {
       setIsLoggedIn(false); 
-      // setItemsCount(0);
+      setItemsCount(0); 
       setAnimatedCount(0);
       setLoading(false);  
     }
