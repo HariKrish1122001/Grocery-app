@@ -532,7 +532,7 @@
   const OrderHistory = () => {
     const [orders, setOrders] = useState([]); // Store the list of orders
     const [loading, setLoading] = useState(true); // Loading state
-    const [error, setError] = useState(null); // Error state
+    // const [error, setError] = useState(null); 
     const navigate = useNavigate();
 
     useEffect(() => {

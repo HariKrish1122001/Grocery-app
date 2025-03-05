@@ -766,7 +766,7 @@ const OrderDetailPage = () => {
     const location = useLocation();
     const [orderDetails, setOrderDetails] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     const [isCanceling, setIsCanceling] = useState(false);
     const [progressWidth, setProgressWidth] = useState(0);
     const [showModal, setShowModal] = useState(false); // Modal visibility
