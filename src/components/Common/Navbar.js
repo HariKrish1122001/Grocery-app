@@ -383,10 +383,10 @@ const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");  
   const [isMenuOpen, setIsMenuOpen] = useState(false);  
   const [isLoggedIn, setIsLoggedIn] = useState(false);  
-  const [itemsCount, setItemsCount] = useState(0);  
+  // const [itemsCount, setItemsCount] = useState(0);  
   const [animatedCount, setAnimatedCount] = useState(0);  
   const [loading, setLoading] = useState(true);  
-  const [error, setError] = useState(null); // To store any error from fetching profile
+  const [error, setError] = useState(null); 
   const navigate = useNavigate(); 
 
   const fetchCartItemCount = async () => {
