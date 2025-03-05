@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import Cookies from 'js-cookie'; // Import js-cookie
-
-// Styled components for the UI
+import Cookies from 'js-cookie';
 const OrderHistoryContainer = styled.div`
   max-width: 800px;
   margin: 0 auto;

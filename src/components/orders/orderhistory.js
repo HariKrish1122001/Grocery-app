@@ -541,7 +541,7 @@
         try {
           const token = Cookies.get('token'); // Get token from cookies
           if (!token) {
-            setError('Token not found. Please log in.');
+            // setError('Token not found. Please log in.');
             setLoading(false);
             return;
           }

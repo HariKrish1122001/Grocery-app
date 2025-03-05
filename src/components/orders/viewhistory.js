@@ -785,7 +785,7 @@ const fetchOrderDetails = async () => {
     try {
         const token = Cookies.get('token');
         if (!token) {
-            setError('Token not found. Please log in.');
+            // setError('Token not found. Please log in.');
             setLoading(false);
             return;
         }
@@ -812,11 +812,11 @@ const fetchOrderDetails = async () => {
                 }, 2000); // 2-second delay
             }
         } else {
-            setError('Order not found.');
+            // setError('Order not found.');
             setLoading(false);
         }
     } catch (err) {
-        setError('Error fetching order details');
+        // setError('Error fetching order details');
         setLoading(false);
     }
 };
@@ -828,7 +828,7 @@ useEffect(() => {
 }, [orderId, deliveryId]);
 
 const handleRetry = () => {
-    setError(null);
+    // setError(null);
     setLoading(true);
     fetchOrderDetails();
 };
@@ -838,7 +838,7 @@ const handleCancelOrder = async () => {
     try {
         const token = Cookies.get('token');
         if (!token) {
-            setError('Token not found. Please log in.');
+            // setError('Token not found. Please log in.');
             setIsCanceling(false);
             return;
         }
@@ -858,7 +858,7 @@ const handleCancelOrder = async () => {
         }
     } catch (err) {
         console.error('Error:', err);
-        setError('Error canceling the order. Please try again.');
+        // setError('Error canceling the order. Please try again.');
         setIsCanceling(false);
     }
 };
@@ -867,7 +867,7 @@ const handleDownloadInvoice = async () => {
     try {
         const token = Cookies.get('token');
         if (!token) {
-            setError('Token not found. Please log in.');
+            // setError('Token not found. Please log in.');
             return;
         }
 
@@ -886,7 +886,7 @@ const handleDownloadInvoice = async () => {
         link.click();
         document.body.removeChild(link);
     } catch (err) {
-        setError('Error downloading the invoice. Please try again.');
+        // setError('Error downloading the invoice. Please try again.');
     }
 };
 
